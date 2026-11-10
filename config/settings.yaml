@@ -1,0 +1,15 @@
+project:
+  name: rues-secop
+  methodology: CRISP-DM
+  architecture: medallion
+
+sources:
+  - rues
+  - secop
+
+storage:
+  format: delta
+  layers:
+    - bronze
+    - silver
+    - gold
